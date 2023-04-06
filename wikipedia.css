@@ -269,7 +269,7 @@ menu{
         flex-direction: column;
         order: 2;
         border: 2px solid black;
-        font-size: 25px;
+        font-size: 21px;
         justify-content: center;
         margin: 15px;
     } 
