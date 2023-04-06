@@ -269,7 +269,7 @@ menu{
         flex-direction: column;
         order: 2;
         border: 2px solid black;
-        font-size: 21px;
+        font-size: 20px;
         justify-content: center;
         margin: 15px;
     } 
@@ -465,6 +465,8 @@ menu{
 
     aside .one{
         flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
     }
 
     aside .two{
@@ -472,14 +474,19 @@ menu{
     }
     
 
+
     aside ul li a{
-        font-size: 22px;
+        font-size: 20px;
         line-height: 40px;
     }
 
     aside{
         text-align: center;
         flex-grow: 1;
+    }
+
+    aside .box{
+        font-size: 20px;
     }
 }
 
