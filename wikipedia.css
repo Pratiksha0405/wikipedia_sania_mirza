@@ -1,0 +1,489 @@
+*{
+    margin: 0px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+figure{
+    flex-basis: 200px;
+    flex-grow: 1;
+    /* flex-shrink: 4; */
+    display: flex;
+    /* border: 1px solid black; */
+}
+
+
+
+.search{
+    border: 1px solid dimgray;
+    /* background-color: brown; */
+    flex-basis: 200px;
+    flex-grow: 5;
+    opacity: 0.8;
+}
+
+.search a{
+    opacity: 0.8;
+}
+
+input{
+    font-size: 17px;
+    border: 0px;
+}
+
+header>ul{
+    /* background-color: darkgoldenrod; */
+    list-style: none;
+    display: flex;
+    flex-basis: 100px;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    font-size: 20px;
+}
+
+a:link{
+    text-decoration: none;   
+}
+
+section{
+    display: flex;
+}
+
+aside{
+    /* background-color: lightgray; */
+    display: flex;
+    flex-direction: column;
+    flex-basis: 250px;
+    /* flex-grow: 1; */
+}
+
+aside ul{
+    flex-basis: 250px;
+    flex-grow: 1;
+    /* flex-grow: 1; */
+}
+
+aside .content ul{
+    list-style: none;
+    font-size: 15px;
+}
+
+aside .contribute ul{
+    list-style: none;
+    font-size: 15px;
+}
+
+aside .tools ul{
+    list-style: none;
+    font-size: 15px;
+}
+
+aside .print ul{
+    list-style: none;
+    font-size: 15px;
+}
+
+aside>div>ul{
+    list-style: none;
+}
+
+aside>div>ul>li>a{
+    font-size: 15px;
+}
+
+.language{
+    display: flex;
+    flex-direction: column;
+}
+
+.box{
+    border: 1px solid black;
+}
+
+.container{
+    /* background-color: coral; */
+    display: flex;
+    flex-direction: column;
+    flex-basis: 800px;
+    flex-grow: 1;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top>p{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.left{
+    flex-basis: 200px;
+    /* flex-grow: 1;
+    flex-shrink: 10; */
+
+    
+}
+
+.left ul{
+    list-style: none;
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* border: 1px solid black; */
+    justify-content: space-between;
+}
+
+
+.right{
+    flex-basis: 200px;
+    /* flex-shrink: 4;
+    flex-grow: 1; */
+}
+
+.right ul{
+    list-style: none;
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* border: 1px solid black; */
+    justify-content: space-between;
+}
+
+.mainsection{
+    display: flex;
+}
+
+.main1{
+    flex-grow: 4;
+    flex-basis: 600px;
+    padding: 15px;
+}
+
+.main2{
+    flex-basis: 300px;
+    display: flex;
+    flex-grow: 1;
+    
+}
+
+.sania{
+    border: 1px solid dimgray;
+    /* flex-basis: 300px; */
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.sania>p{
+    display: flex;
+    justify-content: center;
+}
+
+.about ul{
+    list-style: none;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+}
+
+.singles ul{
+    list-style: none;
+}
+
+.singles{
+    display: flex;
+    justify-content: space-between;
+}
+
+.grand ul{
+    list-style: none;
+}
+
+.grand{
+    display: flex;
+    justify-content: space-between;
+}
+
+.other ul{
+    list-style: none;
+}
+
+.other{
+    display: flex;
+    justify-content: space-between;
+}
+
+.doubles ul{
+    list-style: none;
+}
+
+.doubles{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+@media screen and ( max-width:800px){
+
+
+    header{
+        flex-wrap:wrap;
+        /* border: 1px solid black; */
+    }
+
+
+    section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .mainsection{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .main1{
+        flex-direction: column;
+        order: 2;
+        border: 2px solid black;
+        font-size: 25px;
+        justify-content: center;
+        margin: 15px;
+    } 
+
+    .sania p img{
+        width: 350px;
+    }
+
+    .sania p~p{
+        font-size: 30px;
+    }
+
+    .main2{
+        flex-wrap: wrap;
+        order: 1;
+        justify-content: center;
+        margin: 2%;
+        border: black;
+    }
+
+    .main2 button{
+        width: 300px;
+        height: 40px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .sania{
+        align-items: center;
+        border: 1px double black;
+       
+    }
+
+
+
+    .about {
+        justify-content: space-around;
+    }
+
+    .about ul li{
+        font-size: 20px;
+    }
+
+    .singles {
+        justify-content: space-around;
+    }
+
+    .singles ul li{
+        font-size: 20px;
+    }
+
+    .grand {
+        justify-content: space-around;
+    }
+
+    .grand ul li{
+        font-size: 20px;
+    }
+
+    .other {
+        justify-content: space-around;
+    }
+
+    .other ul li{
+        font-size: 20px;
+    }
+
+    .doubles {
+        justify-content: space-around;
+    }
+
+    .doubles ul li{
+        font-size: 20px;
+    }
+
+    .doubles ul{
+        margin-top: 5%;
+    }
+
+    aside{
+        order: 3;
+        border: 2px solid black;
+        margin: 2%;
+        font-size: 25px;
+        font-weight: bold;
+        /* align-items: center; */
+    }
+
+    aside .one{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    aside .two{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 2%;
+    }
+
+    aside ul li a{
+        font-size: 20px;
+    }
+
+    aside .project{
+        text-align: center;
+        margin-top: 2%;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+
+
+    aside .project ul li a{
+        font-size: 20px;
+    }
+
+    .box{
+        margin: 2%;
+    }
+
+
+}
+
+@media screen and ( max-width:400px){
+    header figure{
+        flex-basis: 400px;
+        justify-content: center;
+        margin: 2%;
+    }
+
+    header .search{
+        flex-basis: 400px;
+        justify-content: center;
+        margin: 2%;
+    }
+
+    header ul{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1%;
+        margin: 2%;
+    }
+
+    .container .top{
+        flex-direction: column;
+        margin: 2%;
+    }
+
+    .container .top a{
+        order: 1;
+    }
+
+    .container .top p{
+        order: 2;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 1%;
+        text-decoration: underline;
+    }
+
+    menu{
+        flex-wrap: wrap;
+    }
+
+
+    menu ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    menu ul li{
+        font-size: 20px;
+        margin: 2%;
+        margin-left: 30%;
+    }
+
+    menu .left ul{
+        flex-basis: 400px;
+    }
+
+    menu .right ul{
+        flex-basis: 400px;
+    }
+        
+    .sania p img{
+        width: 300px;
+    }
+
+    .sania button{
+        width: 280px;
+        margin: 1%;
+    }
+
+    aside .one{
+        flex-wrap: wrap;
+    }
+
+    aside .two{
+        flex-wrap: wrap;
+    }
+    
+
+    aside ul li a{
+        font-size: 22px;
+        line-height: 40px;
+    }
+
+    aside{
+        text-align: center;
+        flex-grow: 1;
+    }
+}
+
+
+
+
+
