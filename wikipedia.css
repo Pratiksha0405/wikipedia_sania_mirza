@@ -355,6 +355,7 @@ menu{
         margin: 2%;
         font-size: 25px;
         font-weight: bold;
+        flex-grow: 1;
         /* align-items: center; */
     }
 
@@ -392,6 +393,19 @@ menu{
 
 
 }
+
+@media screen and ( max-width:600px){
+    header{
+        flex-wrap: wrap;
+    }
+
+    header ul{
+        margin: 1%;
+    }
+
+ 
+}
+
 
 @media screen and ( max-width:400px){
     header figure{
@@ -443,7 +457,9 @@ menu{
     menu ul li{
         font-size: 20px;
         margin: 2%;
-        margin-left: 30%;
+        padding-left: 30%;
+       align-items: center;
+       justify-content: center;
     }
 
     menu .left ul{
